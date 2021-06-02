@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Resell</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">esdxct y
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#" style="color:black;font-weight:800">Resellr.</a></li>
+            <li class="active"><a href="#" style="color:black;font-weight:800">Home</a></li>
+            <li class="dropdown"><a href="#" style="color:black">Books</a>
+              <li class="dropdown"><a href="#" style="color:black">Cycles</a>
+                <li class="dropdown"><a href="#" style="color:black">Stationery</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a href="#" style="color:black"><span class="glyphicon glyphicon-user" style="color:black"></span>hello</a></li>
+            <li><button type="submit" id="logout" style="color:black"><span class="glyphicon glyphicon-log-in" style="color:black"></span> Logout</button></li>
+          </ul>
+        </div>
+      </nav>
+    <a href="profile.html">Profile</a>
+    <button type="submit" class="btn btn-primary" id="create">Create product</button>
+    <h4>Your products</h4>
+    <div class="card-deck" id="model1" style="width:5000px;">
+      <div class="card-columns">
+        </div>
+      </div>
+    </div>
+    <h4>Your Bookmarks</h4>
+    <div class="card-deck" id="model2" style="width:5000px;">
+      <div class="card-columns">
+        </div>
+      </div>
+    </div>
+    <script src="./static/js/dashboard.js"></script>
+
+</body>
+</html>

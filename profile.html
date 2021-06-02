@@ -37,31 +37,14 @@
     <div class="row" style="margin-left:20px">
         <!--login section-->
         <div class="col-sm-12">
-            <form>
-                <h1>Profile</h1>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                  </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Phone</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Email ID</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Stream</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Hostel Block</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <p>New User?<a href="">Register Here</a></p>
-              </form>
-
+            <p>Name:<span id="username"></span></p>
+            <p>email:<span id="useremail"></span></p>
+            <p>stream<span id="userstream"></span></p>
+            <p>hostel<span id="userhostel"></span></p>
+             
+            <button id="update" class="btn btn-primary" id="deleteprofile">Delete profile</button>
+                <button id="update" class="btn btn-primary">Update profile</button>
+       
+                <script src="./static/js/profile1.js"></script>
 </body>
 </html>

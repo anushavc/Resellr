@@ -36,39 +36,21 @@
 
     <div class="row" style="margin-left:20px">
         <!--login section-->
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <form>
-                <h1>Create product</h1>
+                <h1>Update Profile</h1>
+              
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Title</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Description</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Image upload</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Stream</label>
+                    <input type="password" class="form-control" id="up_stream" placeholder="Password">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Price</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">Hostel Block</label>
+                    <input type="password" class="form-control" id="up_hostel" placeholder="Password">
                   </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">Category</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                <button type="submit" class="btn btn-primary">Upload</button>
-                <p>New User?<a href="">Register Here</a></p>
+                <button type="submit" id="updateprofile" class="btn btn-primary">Submit</button>
+
               </form>
-        </div>
-        <!--login image-->
-        <div class="col-sm-6">
-            <img src="{{url_for('static',filename='img/product.png')}}" alt="">
-        </div>
-      </div>
-
-
+              <script src="./static/js/update.js"></script>
 </body>
 </html>

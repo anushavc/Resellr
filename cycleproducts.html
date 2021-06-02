@@ -31,37 +31,14 @@
     </div>
   </nav>
 <!--end of navbar--> 
-{% for post in posts %}
-<div class="card-deck" style="width:500px;">
-  <div class="card">
-    <img class="card-img-top" src="{{post.image}}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{post.title}}</h5>
-      <p class="card-text">{{post.description}}</p>
-    </div>
-    <div class="card-footer">
-      <button id="buttonid" type="button" value="{{post._id}}">View More</button>
+
+<div class="card-deck" id="model3" style="width:5000px;">
+  <div class="card-columns">
     </div>
   </div>
-  
 </div>
-{%endfor%}
+<script src="./static/js/catproducts.js"></script>
+  
+
 </body>
-<script>
-  $("button").click(function() {
-    var x = document.getElementById("buttonid").value;
-    console.log(x)
-        $.ajax({
-          url: "/get_id",
-          type: "get",
-          data: {value:x},
-          success: function(response) {
-         },
-         error: function(xhr) {
-          //Do Something to handle error
-        }
-       });
-     
-  });
-</script>
 </html>
